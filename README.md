@@ -15,53 +15,68 @@ pip install tqdm
 
 ## Running the experiments:
 ### p-median
-#### training:
+```
+# Generate p-median samples
+python 01_generate_samples.py p-median
+# Training
 python 02_train_gcn.py p-median -m gcn_3layers  
 python 02_train_gcn.py p-median -m gcn_4layers  
 python 02_train_gcn.py p-median  
 python 02_train_gcn.py p-median -m gcn_6layers  
 python 02_train_gcn.py p-median -m gcn_7layers  
-#### testing:
+# Test
 python 03_test_gcn.py p-median  
-#### evalute result:
+# Evaluation
 python 04_evaluate_result.py p-median
+```
 
 ### p-center
-#### training:
+```
+# Generate p-center samples
+python 01_generate_samples.py p-center
+#### Training
 python 02_train_gcn.py p-center-m gcn_3layers  
 python 02_train_gcn.py p-center-m gcn_4layers  
 python 02_train_gcn.py p-center  
 python 02_train_gcn.py p-center-m gcn_6layers  
 python 02_train_gcn.py p-center-m gcn_7layers  
-#### testing:
+# Test
 python 03_test_gcn.py p-center
-#### evalute result:
+# Evaluation:
 python 04_evaluate_result.py p-center
+```
 
 ### MCLP
-#### training:
+```
+# Generate MCLP samples
+python 01_generate_samples.py MCLP
+# Training
 python 02_train_gcn.py MCLP -m gcn_3layers  
 python 02_train_gcn.py MCLP -m gcn_4layers  
 python 02_train_gcn.py MCLP  
 python 02_train_gcn.py MCLP -m gcn_6layers  
 python 02_train_gcn.py MCLP -m gcn_7layers  
-#### testing:
+# Test
 python 03_test_gcn.py MCLP 
-#### evalute result:
+# Evaluation
 python 04_evaluate_result.py MCLP
+```
 
 ### LSCP
-#### training:
+```
+# Generate LSCP samples
+python 01_generate_samples.py LSCP
+# Training:
 python 02_train_gcn.py LSCP -m gcn_3layers  
 python 02_train_gcn.py LSCP -m gcn_4layers  
 python 02_train_gcn.py LSCP  
 python 02_train_gcn.py LSCP -m gcn_6layers  
 python 02_train_gcn.py LSCP -m gcn_7layers  
-#### testing:
+# Test
 python 03_test_gcn.py LSCP
-#### evalute result:
+# Evaluation
 python 04_evaluate_result.py LSCP
-
+```
 
 
 
