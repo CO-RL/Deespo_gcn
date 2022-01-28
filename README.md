@@ -1,6 +1,6 @@
 # Deespo_gcn
 
-服务器：Linux server4 4.15.0-163-generic #171-Ubuntu SMP Fri Nov 5 11:55:11 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+服务器：Linux server4 4.15.0-163-generic #171-Ubuntu SMP Fri Nov 5 11:55:11 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux  
 显卡：NVIDIA GeForce RTX 3090
 
 ## Install requirement：
