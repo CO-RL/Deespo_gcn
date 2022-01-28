@@ -4,7 +4,11 @@
 显卡：NVIDIA GeForce RTX 3090
 
 ## Install requirement：
-### 安装pytorch（需要根据显卡选择对应的cuda版本）
+
+### Install Gurobi
+
+### Install pytorch（Select the corresponding CUDA version）
+```
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 pip install scipy
 pip install networkx
@@ -12,6 +16,7 @@ pip install tensorboardX
 pip install tensorboard
 pip install tensorflow
 pip install tqdm
+```
 
 ## Running the experiments:
 ### p-median
@@ -77,6 +82,8 @@ python 03_test_gcn.py LSCP
 # Evaluation
 python 04_evaluate_result.py LSCP
 ```
+## Examples
+Graph generation
 
 ## Questions / Bugs
 Please feel free to submit a Github issue if you have any questions or find any bugs. We do not guarantee any support, but will do our best if we can help.
