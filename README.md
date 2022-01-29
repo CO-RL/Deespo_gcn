@@ -6,7 +6,31 @@
 ## Install requirement：
 
 ### Install Gurobi
+1.You can register and download ```Gurobi``` from here.  
+2.解压文件到你的目录  
+```
+ tar -xvfz gurobi9.5.0_linux64.tar.gz
+```
+3.修改环境变量
+```
+vim ~/.bashrc
+```
+在文件最后添加
+```
+export GUROBI_HOME="/home/***/gurobi950/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+```
+保存后，输入
+```
+source ~/.bashrc #使环境变量生效
+```
+4.You need a liscense from gurobi. You can get one from here.  
+5. 激活gurobi  
+进入目录 gurobi9.5.0/linux64/bin 
+run grbgetkey ******-f*e*-4f*8-2b*c-5*f8e*7*7*7f(申请的liscense)  
 
+Installation instructions of other solvers will be given later.
 ### Install pytorch（Select the corresponding CUDA version）
 ```
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
